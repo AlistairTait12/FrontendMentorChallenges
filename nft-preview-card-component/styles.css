@@ -17,7 +17,7 @@ body {
   border-radius: 15px;
   padding: 20px;
   background-color: var(--very-dark-blue-card-bg);
-  height: 550px;
+  height: 530px;
   width: 300px;
 }
 
@@ -62,8 +62,7 @@ body {
 }
 
 .creator-info-container {
-  border-top: 1px solid var(--soft-blue);
-  height: 50px;
+  border-top: 1px solid var(--very-dark-blue-line);
   padding: 15px 0;
   vertical-align: middle;
 }

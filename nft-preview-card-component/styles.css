@@ -64,4 +64,33 @@ body {
 .creator-info-container {
   border-top: 1px solid var(--soft-blue);
   height: 50px;
+  padding: 15px 0;
+  vertical-align: middle;
+}
+
+.avatar-container {
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  display: block;
+  height: 30px;
+  width: 30px;
+  float: left;
+  margin-right: 15px;
+}
+
+.creator-label {
+  margin-top: 5px;
+  display: inline-block;
+  color: var(--soft-blue);
+}
+
+.creator-name {
+  margin-top: 5px;
+  display: inline-block;
+  color: var(--white);
+}
+
+.avatar {
+  height: 100%;
+  width: 100%;
 }

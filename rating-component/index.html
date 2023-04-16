@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,13 @@
     <title>Rating component</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
     <div class="card">
         <div class="section">
-            <button class="" id="star-button"></button>
+            <div class="star-icon-container">
+                <img src="./images/icon-star.svg" alt="">
+            </div>
         </div>
         <div class="section">
             <h1 class="header">
@@ -19,24 +23,40 @@
         </div>
         <div class="section">
             <p class="description">
-                Please let us know how we did with your support request. All feedback is appreciated to help us improve our
-                offering!
+                Please let us know how we did with your support request. All feedback is appreciated to help us improve
+                our offering!
             </p>
         </div>
         <!-- TODO: Radio buttons need labels 1 through 5 -->
         <!-- TODO: Radios should be hidden and the label should be highlighted if clicked -->
         <div class="section">
-            <input type="radio">
-            <input type="radio">
-            <input type="radio">
-            <input type="radio">
-            <input type="radio">
+            <div class="rating-option-container">
+                <input hidden type="radio" name="rating" id="rating-1">
+                <label class="rating-label" for="rating-1">1</label>
+            </div>
+            <div class="rating-option-container">
+                <input hidden type="radio" name="rating" id="rating-2">
+                <label class="rating-label" for="rating-2">2</label>
+            </div>
+            <div class="rating-option-container">
+                <input hidden type="radio" name="rating" id="rating-3">
+                <label class="rating-label" for="rating-3">3</label>
+            </div>
+            <div class="rating-option-container">
+                <input hidden type="radio" name="rating" id="rating-4">
+                <label class="rating-label" for="rating-4">4</label>
+            </div>
+            <div class="rating-option-container">
+                <input hidden type="radio" name="rating" id="rating-5">
+                <label class="rating-label" for="rating-5">5</label>
+            </div>
         </div>
         <div class="section">
             <button class="submit-btn">
-                SUBMIT
+                S U B M I T
             </button>
         </div>
     </div>
 </body>
+
 </html>

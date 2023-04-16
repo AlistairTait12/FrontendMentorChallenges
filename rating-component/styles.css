@@ -17,9 +17,13 @@ body {
 
 .card {
     background-color: var(--dark-blue);
-    max-width: 350px;
-    padding: 20px;
-    border-radius: 10px;
+    max-width: 300px;
+    padding: 30px;
+    border-radius: 22.5px;
+}
+
+.header {
+    margin-bottom: 0px;
 }
 
 .submit-btn {
@@ -27,12 +31,47 @@ body {
     color: var(--white);
     border: none;
     width: 100%;
-    height: 40px;
-    border-radius: 20px;
+    height: 45px;
+    border-radius: 22.5px;
     font-size: 15px;
+    margin-top: 25px;
+}
+
+.rating-label {
+    height: 100%;
+    width: 100%;
+}
+
+.star-icon-container {
+    height: 45px;
+    width: 45px;
+    background-color: hsl(216, 12%, 54%, 25%);
+    border-radius: 22.5px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 51px;
+}
+
+.rating-option-container {
+    height: 45px;
+    width: 45px;
+    background-color: hsl(216, 12%, 54%, 25%);
+    border-radius: 22.5px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 45px;
+    color: var(--light-grey);
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
 }
 
 .description {
     font-size: 15px;
     color: var(--light-grey);
+    line-height: 150%;
 }

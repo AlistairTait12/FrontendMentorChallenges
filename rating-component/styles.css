@@ -51,6 +51,11 @@ body {
 .rating-option-container {
     height: 45px;
     width: 45px;
+}
+
+.rating-label {
+    height: 100%;
+    width: 100%;
     background-color: hsl(216, 12%, 54%, 25%);
     border-radius: 22.5px;
     float: left;
@@ -60,19 +65,20 @@ body {
     color: var(--light-grey);
 }
 
-.rating-option-container:hover {
-    background-color: var(--orange);
-    color: var(--white);
-    cursor: pointer;
-}
-
-.rating-label {
-    height: 100%;
-    width: 100%;
-}
-
 .rating-label:hover {
     cursor: pointer;
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+input[type="radio"]:checked + .rating-label {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+input[type="radio"]:checked + .rating-label:hover {
+    background-color: var(--orange);
+    color: var(--white);
 }
 
 .submit-btn {

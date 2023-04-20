@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating component</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="card" id="rating-card">
+        <div class="section">
+            <div class="star-icon-container">
+                <img src="./images/icon-star.svg" alt="">
+            </div>
+        </div>
+        <div class="section">
+            <h1 class="header">
+                How did we do?
+            </h1>
+        </div>
+        <div class="section">
+            <p class="description">
+                Please let us know how we did with your support request. All feedback is appreciated to help us improve
+                our offering!
+            </p>
+        </div>
+        <div class="section">
+            <div class="rating-option-container">
+                <input hidden value="1" type="radio" name="rating" id="rating-1">
+                <label class="rating-label" id="rating-label-1" for="rating-1">1</label>
+            </div>
+            <div class="rating-option-container">
+                <input hidden value="2" type="radio" name="rating" id="rating-2">
+                <label class="rating-label" id="rating-label-2" for="rating-2">2</label>
+            </div>
+            <div class="rating-option-container">
+                <input hidden value="3" type="radio" name="rating" id="rating-3">
+                <label class="rating-label" id="rating-label-3" for="rating-3">3</label>
+            </div>
+            <div class="rating-option-container">
+                <input hidden value="4" type="radio" name="rating" id="rating-4">
+                <label class="rating-label" id="rating-label-4" for="rating-4">4</label>
+            </div>
+            <div class="rating-option-container">
+                <input hidden value="5" type="radio" name="rating" id="rating-5">
+                <label class="rating-label" id="rating-label-5" for="rating-5">5</label>
+            </div>
+        </div>
+        <div class="section">
+            <button class="submit-btn" id="submit">
+                S U B M I T
+            </button>
+        </div>
+    </div>
+    <div class="card" id="thankyou-card" hidden>
+        <div class="section section-thankyou">
+            <img src="./images/illustration-thank-you.svg" alt="" id="feedback-img">
+        </div>
+        <div class="section section-thankyou">
+            <div class="score-label section-thankyou">
+                You selected&nbsp;<span id="score">0</span>&nbsp;out of 5
+            </div>
+        </div>
+        <div class="section section-thankyou">
+            <h1 class="header" id="thanks-header">
+                Thank you!
+            </h1>
+        </div>
+        <div class="section section-thankyou">
+            <p class="description">
+                We appreciate you taking the time to give a rating.
+                If you ever need more support, don't hesitate to get in touch!
+            </p>
+        </div>
+    </div>
+</body>
+
+<script src="./app.js"></script>
+</html>

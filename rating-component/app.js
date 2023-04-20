@@ -3,16 +3,17 @@ function changeScore(event) {
   document.getElementById('score').innerHTML = rating;
 }
 
-// TODO: Validate that the user has selected a value
+// TODO: Consider adding message to show user that the rating must be selected
 function revealThankYou() {
-  document.getElementById('thankyou-card').removeAttribute('hidden');
-  document.getElementById('rating-card').setAttribute('hidden', 'true');
+  if (document.getElementById('score').innerHTML != '0') {
+    document.getElementById('thankyou-card').removeAttribute('hidden');
+    document.getElementById('rating-card').setAttribute('hidden', 'true');
+  }
 }
 
-document.getElementById('rating-label-1').addEventListener('click', changeScore);
-document.getElementById('rating-label-2').addEventListener('click', changeScore);
-document.getElementById('rating-label-3').addEventListener('click', changeScore);
-document.getElementById('rating-label-4').addEventListener('click', changeScore);
-document.getElementById('rating-label-5').addEventListener('click', changeScore);
+for (let i = 1; i <= 5; i++) {
+  document.getElementById(`rating-label-${i}`)
+    .addEventListener('click', changeScore);
+}
 
 document.getElementById('submit').addEventListener('click', revealThankYou);
